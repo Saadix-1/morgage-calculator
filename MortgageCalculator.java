@@ -20,7 +20,11 @@ public class MortgageCalculator {
 
         double monthlyPayment = calculateMonthlyPayment(principal, monthlyInterestRate, numberOfPayments);
 
+        double totalPayment = monthlyPayment * numberOfPayments;
+
         System.out.printf("Le paiement mensuel est : %.2f\n", monthlyPayment);
+
+        System.out.printf("Le paiment totale est %.2f\n" , totalPayment);
 
         scanner.close();
     }
